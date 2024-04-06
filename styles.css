@@ -1,0 +1,191 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6b6464;
+  height: 34px;
+  margin: 0 auto;
+  max-width: 1440px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.actions button {
+  width: 24px;
+  height: 24px;
+  background-image: url(img/sprite.png);
+  background-repeat: no-repeat;
+  margin-left: 11px;
+}
+.actions button,
+.about-btn button {
+  border: none;
+  background-color: transparent;
+}
+
+.icon-1png {
+  background-position: -0px -0px;
+}
+.icon-2png {
+  background-position: -24px -0px;
+}
+.icon-3png {
+  background-position: -0px -24px;
+}
+.icon-4png {
+  background-image: url(img/sprite.png);
+  background-position: -24px -24px;
+  width: 24px;
+  height: 24px;
+}
+.about-btn {
+  margin-right: 10px;
+}
+.main-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+}
+.sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #6b6464;
+  width: 63px;
+  min-width: 63px;
+  padding: 10px;
+  box-shadow: 4px 0px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  align-content: flex-start;
+}
+.sidebar button {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 10px;
+  padding: 5px;
+  background-image: url(img/sprite2.png);
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+}
+.icon-10png {
+  background-position: 0px 0px;
+}
+.icon-11png {
+  background-position: -24px 0px;
+}
+.icon-5png {
+  background-position: -48px 0px;
+}
+.icon-6png {
+  background-position: -48px -24px;
+}
+.icon-71png {
+  background-position: 0px -48px;
+}
+.icon-7png {
+  background-position: -24px -48px;
+}
+.icon-8png {
+  background-position: -48px -48px;
+}
+.icon-9png {
+  background-position: -72px 0px;
+}
+.actions button:hover,
+.about-btn button:hover,
+.sidebar button:hover {
+  cursor: pointer;
+}
+.actions button:active,
+.about-btn button:active,
+.sidebar button:active {
+  outline: none;
+  box-shadow: 0 0 10px #6cd6ba;
+}
+.canvas-wrapper {
+  display: flex;
+}
+.canvas-container {
+  flex-grow: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color: #dbf3ed;
+  display: flex;
+  justify-content: space-between;
+}
+canvas {
+  border: 3px solid #6cd6ba;
+  background-color: #fff;
+  width: calc(50% - 35px);
+  /* Вычитаем отступы и ширину рамок из 50% */
+  height: 800px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.image-selector {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#add-from-file-btn {
+  background-color: #6b6464;
+  color: #6cd6ba;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+#add-from-file-btn:hover {
+  background-color: #6cd6ba;
+  color: #6b6464;
+}
+#add-from-file-btn:active {
+  outline: none;
+  box-shadow: 0 0 10px white;
+}
+#text-editor {
+  position: absolute;
+  top: 56px;
+  right: 218px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+#text-input {
+  width: 200px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+#add-text-btn {
+  padding: 5px 10px;
+  background-color: #6cd6ba;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+#add-text-btn:hover {
+  background-color: #4ca891;
+}
+#text-editor {
+  display: none;
+}
+.footer {
+  background-color: #6b6464;
+  text-align: center;
+  height: 34px;
+  line-height: 34px;
+  max-width: 1440px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+}
