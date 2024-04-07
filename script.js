@@ -304,7 +304,7 @@ document.getElementById('save-image-btn').addEventListener('click', function () 
 });
 
 document.querySelector('.icon-7png').addEventListener('click', function () {
-  var imageUrl = 'https://pixabay.com/photos/car-vehicle-automobile-retro-8647805/';
+  var imageUrl = 'https://bogidaevamarina.github.io/img/free-icon-in-love-14352240.png';
   var img = new Image();
   img.onload = function () {
     var canvas = document.getElementById('canvas1');
