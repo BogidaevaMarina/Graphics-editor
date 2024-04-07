@@ -304,7 +304,7 @@ document.getElementById('save-image-btn').addEventListener('click', function () 
 });
 
 document.querySelector('.icon-7png').addEventListener('click', function () {
-  var imageUrl = 'https://unsplash.com/photos/a-close-up-of-a-black-bird-with-red-eyes-ZQZs4YjmM_o';
+  var imageUrl = 'https://pixabay.com/photos/car-vehicle-automobile-retro-8647805/';
   var img = new Image();
   img.onload = function () {
     var canvas = document.getElementById('canvas1');
