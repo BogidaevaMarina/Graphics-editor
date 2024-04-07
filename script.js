@@ -304,7 +304,7 @@ document.getElementById('save-image-btn').addEventListener('click', function () 
 });
 
 document.querySelector('.icon-7png').addEventListener('click', function () {
-  var imageUrl = 'https://bogidaevamarina.github.io/img/free-icon-in-love-14352240.png';
+  var imageUrl = 'https://bogidaevamarina.github.io/img/1624294829_8-phonoteka_org-p-monstera-oboi-krasivo-9.jpg';
   var img = new Image();
   img.onload = function () {
     var canvas = document.getElementById('canvas1');
